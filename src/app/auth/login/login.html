@@ -1,0 +1,59 @@
+<div class="login-container">
+  <!-- LEFT SIDE -->
+  <div class="login-left">
+    <div class="brand">
+      <h2>Study<span>Stack</span></h2>
+    </div>
+
+    <div class="tagline">
+      <h3>Manage, Learn, Stay connected.</h3>
+      <p>
+        An online classroom management system that keeps records,
+        activities, and announcements in one place.
+      </p>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="login-right">
+    <h2>Welcome Back to StudyStack!</h2>
+    <p class="subtitle">Track your class records with StudyStack</p>
+
+    <form (ngSubmit)="login()">
+      <input
+        type="username"
+        placeholder="User UID"
+        [(ngModel)]="username"
+        name="username"
+      />
+
+      <input
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+        name="password"
+      />
+
+      <div class="row">
+        <a href="#">Forgot Password?</a>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <button type="submit" class="login-btn">LOGIN</button>
+
+      <div class="divider">OR</div>
+
+      <button type="button" class="google-btn">
+        Continue with Google
+      </button>
+
+      <p class="signup">
+        Don’t have an account? <a href="#">Sign Up</a>
+      </p>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  background: #0f8b5d;
+}
+
+/* LEFT PANEL */
+.login-left {
+  flex: 1;
+  padding: 40px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #0f8b5d, #0aa36c);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand h2 {
+  font-size: 24px;
+}
+
+.brand span {
+  color: #9effc7;
+}
+
+.tagline h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.tagline p {
+  max-width: 320px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* RIGHT PANEL */
+.login-right {
+  flex: 1;
+  background: #a8d5c2;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right h2 {
+  margin-bottom: 5px;
+  text-align: center;
+  font-style: oblique;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+/* FORM */
+form {
+  max-width: 360px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.row a {
+  color: #145c43;
+  text-decoration: none;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0f8b5d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* DIVIDER */
+.divider {
+  text-align: center;
+  font-size: 12px;
+  margin: 15px 0;
+  color: #555;
+}
+
+/* GOOGLE BUTTON */
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* SIGN UP */
+.signup {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.signup a {
+  color: #0f8b5d;
+  text-decoration: none;
+}
+
+/* TOGGLE SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #0f8b5d;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
