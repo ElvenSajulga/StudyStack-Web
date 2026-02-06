@@ -41,7 +41,7 @@
 }
 
 .top-brand img {
-  width: 60px;
+  width: 70px;
 }
 
 .top-brand h2 {
@@ -127,23 +127,30 @@
   flex-direction: column;
   align-items: flex-start;
   font-size: 13px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .forgot {
   color: #0a7a45;
   cursor: pointer;
+  padding-bottom: 5px;
 }
 
 /* REMEMBER SWITCH */
 .remember {
+  width: 100%;
   display: flex;
+  position: relative;
   align-items: center;
-  gap: 8px;
+  color: #555;
+}
+.remember span{
+  padding-right: 40px;
 }
 
 .switch {
-  position: relative;
+  position: absolute;
+  right: 0; 
   width: 42px;
   height: 20px;
 }
